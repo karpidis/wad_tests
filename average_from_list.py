@@ -1,14 +1,9 @@
 import random
-l = [random.randint(0, 1000000) for i in range(50)]
-print(l)
+random_lista = [random.randint(0, 1000000) for i in range(50)]
 
 
 def mesos_oros(x):
-    sum = 0
-    for i in x:
-        sum += i
-    sum = sum/50
-    return sum
+    return sum(x)/len(x)
 
 
-print(mesos_oros(l))
+print(mesos_oros(random_lista))
